@@ -1,5 +1,72 @@
-/* TODO: Design interface */
+/*: Design interface */
 
-/* TODO: Create media query {
+
+
+html{
+    font-family: serif;
+}
+
+#body{
+    background-color: rgb(255, 255, 255);}
+
+
+#username{
+    background-color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    border: 1px;
+}
+
+#nameModal{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 50vw;
+    background: #ccc;
+    left: calc(50% - 25vw)
+}
+
+#chat_box{
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#chat-window{
+    height: 80vh;
+    overflow-y: scroll;
+}
+textarea{
+    width: 80vw;
+    height: 5vh;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    overflow-y: scroll;
+}
+
+
+
+/* : Create media query {
 
 } */
+
+@media only screen and (max-width: 1024px) { 
+    /*
+      Selectors go here
+     */
+     #chat-window{
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    textarea{
+        width: 80vw;
+        height: 5vh;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+        overflow-y: scroll;
+    }
+}

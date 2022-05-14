@@ -4,10 +4,38 @@
     <title>CMPSC 302: Chat</title>
     <link href="style/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body id = "body">
     <main>
-      <!-- TODO: Create minimum interface according to wireframe -->
+      <div id = "chat-window">
+      <h1>Dummy form</h1>
+      <!-- : Create minimum interface according to wireframe -->
+      <div>
+      <!--<h2>Text entry</h2>-->
+      <form id = "chat_box" onsubmit = "return chat.send(this,'normal')">
+        <label for="send_message">.</label>
+        <textarea id = "send_message" placeholder="Send message"></textarea> 
+          <button type = "submit" id = "submit_button">
+            &raquo;  <!-- small arrow button -->
+          </button>
+          <!--<button type = "reset" id = "reset_button">Clear</button> -->
+      </form>
+      </div>
+      </div>
+
+      <div id = "nameModal">
+        <h2>Name Entry</h2>
+        <form>
+          <label for="username">Username: </label>
+          <input id = "username" name = "username" type="text" placeholder="Enter username">
+          <div>
+            <button type = "submit" id = "submit_button1">Submit</button>
+            <button type = "reset" id = "reset_button1">Clear</button>
+          </div>
+        </form>
+        </div>
     </main>
-    <!-- TODO: Use <script> element to import the client.js file -->
+
+    <!--: Use <script> element to import the client.js file -->
+      <script src = "scripts/client.js"></script>
   </body>
 </html>
